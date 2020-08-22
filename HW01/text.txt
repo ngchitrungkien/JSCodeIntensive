@@ -1,0 +1,5 @@
+getElementsByTagName() trả về HTMLcollection
+getElementsByClassName(), querySelectorAll() trả về NodeList
+
+HTMLcollection chỉ chứa các element node, trong khi NodeList chứa mọi loại node.
+HTMLcollection có thể truy cập bằng tên, id hoặc index, trong khi NodeList chỉ truy cập được qua index.
