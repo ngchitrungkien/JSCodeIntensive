@@ -9,6 +9,7 @@ class rapVietProfile extends HTMLElement{
         <p id="name"></p>
         <p id="age"></p>
         <p id="address"></p>
+        <hr>
         `;
 
         this.$name = this.shadowRoot.querySelector('#name')
