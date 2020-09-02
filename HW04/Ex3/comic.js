@@ -1,24 +1,25 @@
 import {BaseComponent} from './BaseComponent.js'
-class Manga extends BaseComponent {
+class Comic extends BaseComponent {
+
     constructor() {
         super()
         this.props = {
-            "img" : "",
+            "img": "",
             "content": "",
             "chapters": '',
-            "time" : "",
-            "views" : "",
-            "likes" : ""
-
+            "time": "",
+            "views": "",
+            "likes": ""
         }
     }
     static get observedAttributes() {
-        return ["img", "content","chapters","time","views", "likes"]
+        return ["img","content","chapters","time","views","likes"]
     }
     render() {
         this._shadowRoot.innerHTML = 
         `
         <style>
+
         *{
             margin: 0;
             padding: 0;
@@ -68,16 +69,18 @@ class Manga extends BaseComponent {
             <div class="comic">
                 <img src="${this.props["img"]}" />
                 <div class="content">${this.props["content"]}</div>
-                <div class="box" >
+
+                <div class="box">
                     <div class="chapters">${this.props["chapters"]}</div>
                     <div class="time">${this.props["time"]}</div>
                 </div>
+                
                 <div class=views>${this.props["views"]}</div>
-                <div class="likes">${this.props["likes"]}</>        
+                <div class="likes">${this.props["likes"]}</div>        
             </div>
         </div>  
         `
     }
 }
 
-window.customElements.define("manga-container", Manga)
+window.customElements.define("manga-container", Comic)
