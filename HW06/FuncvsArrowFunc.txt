@@ -1,0 +1,14 @@
+- Arrow Function và Function đều là function, nhưng cách viết và cách tham chiếu tới bối cảnh/ngữ cảnh (context) khác nhau.
+- Arrow Function: sử dụng kí tự =>
+    hello = () => {
+    console.log('hello')
+    }
+    // hello()
+- Function thông thường:
+    function hello(){
+    console.log('hello')
+    }
+    // hello()
+- Khác với function thông thường, arrow function không định nghĩa lại 'this'. Do đó, this sẽ tương ứng với ngữ cảnh gần nhất của nó.
+- Với Function thông thường, chúng ta phải rất rõ ràng là return về cái gì.
+- Với Arrow Function, nếu chỉ có một expression, bỏ qua dấu ngoặc đơn luôn, thì giá trị của expression sẽ được return.
