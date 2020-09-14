@@ -1,0 +1,16 @@
+.meme {
+    width: 420px;
+    margin: 10px 10px;
+}
+.meme > div {
+    border: solid orange;
+    padding: 2px;
+    font-size: 18pt;
+}
+img {
+    width: 410px;
+    height: 440px;
+}
+#date-modified {
+    border: solid orange;
+}
